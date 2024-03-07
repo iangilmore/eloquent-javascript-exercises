@@ -23,3 +23,18 @@ function fizzerBuzzer() {
     }
   }
 }
+
+// Chessboard
+function chessBoard(size) {
+  let board = ""
+  for (let index = 0; index <= size*size+size; index++) {
+    if (index % (size+1) === 0) {
+      board += "\n"
+    }else if (index % 2 === 0) {
+      board += "#"
+    } else {
+      board += " "
+    }    
+  }
+  return board;
+}
